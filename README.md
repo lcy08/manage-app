@@ -3,9 +3,9 @@
 Public Repository of Management-App
 
 
-To Demo:
+## To Demo:
 
-admin user 
+### admin user 
 
 email: admin@lufel.id
 
@@ -14,7 +14,7 @@ pass: admin234
 
 
 
-normal user
+### normal user
 
 email: user@lufel.id
 
