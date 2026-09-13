@@ -1,0 +1,307 @@
+@page {
+  size: 8.5in 5.5in;
+  margin: 0.1in;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 12px;
+  line-height: 1.2;
+  background: white;
+  width: 8in;
+  height: auto;
+  padding: 0.3in 0.15in;
+  margin: 0 auto;
+}
+
+.container {
+  border: 1px;
+  border-color: black;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.logo {
+  height: 35px;
+  margin-right: 8px;
+}
+
+.companyName {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.companyAddress {
+  font-size: 9px;
+  line-height: 1.2; /* set to 1 */
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.recipientInfo {
+  text-align: left;
+  width: 180px;
+}
+
+.recipientLabel {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.recipientName {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.recipientAddress {
+  font-size: 9px;
+}
+
+.divider {
+  border-top: 2px solid black;
+  margin: 6px 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.title h1 {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+.vehicleDetails {
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+}
+
+.vehicleKind {
+  width: fit-content;
+}
+
+.vehicleNumber {
+  width: 135px;
+}
+
+.itemsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+
+.itemsTable th,
+.itemsTable td {
+  border: 1px solid black;
+  padding: 3px 4px;
+  text-align: left;
+  vertical-align: top;
+  line-height: normal;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.itemsTable th {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.signatureSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.signatureBox {
+  text-align: center;
+  flex: 1;
+}
+
+.recipientBoxSpace {
+  opacity: 0;
+}
+
+.signatureLine {
+  margin-top: 50px;
+  font-size: 11px;
+}
+
+.dateLocation {
+  font-size: 11px;
+}
+
+.senderName {
+  font-size: 11px;
+  margin-top: 50px;
+}
+
+.rek {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.satuanFinal {
+  font-weight: 700;
+}
+
+.satuanGrouping {
+  font-weight: 400;
+}
+
+.itemsTable th:first-child,
+.itemsTable td:first-child {
+  text-align: center;
+  margin: auto;
+  width: 25%;
+}
+.itemsTable th:nth-child(2),
+.itemsTable td:nth-child(2) {
+  width: 20%;
+}
+
+.itemsTable th:nth-child(3),
+.itemsTable td:nth-child(3) {
+  text-align: center;
+  width: 17%;
+}
+.itemsTable th:nth-child(4),
+.itemsTable td:nth-child(4) {
+  text-align: center;
+  width: 12%;
+}
+
+.itemsTable th:nth-child(5) {
+  width: 20%;
+  text-align: center;
+}
+
+.itemsTable td:nth-child(5) {
+  width: 20%;
+  text-align: left;
+  padding: 3px 8px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.currency {
+  text-align: left;
+  white-space: nowrap;
+}
+.amount {
+  white-space: nowrap;
+}
+
+.itemsTable tfoot td {
+  border: none !important;
+  font-weight: bold;
+}
+
+.itemsTable {
+  page-break-inside: auto;
+  break-inside: auto;
+  border-collapse: collapse;
+}
+
+.itemsTable tr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.itemsTable td,
+.itemsTable th {
+  page-break-inside: avoid;
+}
+
+.itemsTable tfoot {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Force content behavior for printing */
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  /* Prevent unwanted page breaks */
+  .header {
+    page-break-after: avoid;
+  }
+
+  .title {
+    page-break-before: avoid;
+    page-break-after: avoid;
+  }
+
+  .itemsTable {
+    page-break-inside: auto;
+    break-inside: auto;
+    border-collapse: collapse;
+  }
+
+  .itemsTable tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .itemTable td,
+  th {
+    page-break-inside: avoid;
+  }
+
+  .itemsTable tfoot {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .signatureSection {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-top: 15px;
+  }
+  .tableSignatureGroup {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+}

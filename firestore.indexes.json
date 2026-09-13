@@ -1,0 +1,182 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "faktur",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "kodeKlien",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "statusFinal",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalFaktur",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "ASCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "itemStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "statusSJ",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalSiapKirim",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "tanggalSiapKirimDeadline",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "ASCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "itemStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalMasukDeadline",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalMasuk",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "itemStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalProsesDeadline",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalProses",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "itemStatus",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalSelesaiDeadline",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalSelesai",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    },
+    {
+      "collectionGroup": "items",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "kodeKlien",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "statusSJ",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalSiapKirim",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "ASCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    },
+    {
+      "collectionGroup": "SJ",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "kodeKlien",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "statusFaktur",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "tanggalSJ",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "ASCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
+    }
+  ],
+  "fieldOverrides": []
+}
