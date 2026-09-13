@@ -2,11 +2,11 @@ import React from "react";
 
 import styles from "./FakturPrint.module.css";
 
-import MP001 from "../../../assets/LOGO/MP001.png";
-import BG001 from "../../../assets/LOGO/BG001.png";
-import LO001 from "../../../assets/LOGO/LO001.png";
+import AR001 from "../assets/LOGO/AR001.png";
+import LO002 from "../assets/LOGO/LO002.png";
+import LO001 from "../assets/LOGO/LO001.png";
 
-const logo = { MP001, BG001, LO001 };
+const logo = { AR001, LO002, LO001 };
 
 export default function FakturPrint({ data, type }) {
   return (

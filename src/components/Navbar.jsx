@@ -5,12 +5,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useLogout } from "../hooks/useLogout";
 
-import MP001 from "../assets/LOGO/MP001.png";
-import BG001 from "../assets/LOGO/BG001.png";
+import AR001 from "../assets/LOGO/AR001.png";
+import LO002 from "../assets/LOGO/LO002.png";
 import LO001 from "../assets/LOGO/LO001.png";
 import { ChevronDown } from "lucide-react";
 
-const logo = { MP001, BG001, LO001 };
+const logo = { AR001, LO002, LO001 };
 
 export default function Navbar() {
   const navigate = useNavigate();

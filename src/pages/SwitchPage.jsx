@@ -1,11 +1,11 @@
-import MP001 from "../assets/LOGO/MP001.png";
-import BG001 from "../assets/LOGO/BG001.png";
+import AR001 from "../assets/LOGO/AR001.png";
+import LO002 from "../assets/LOGO/LO002.png";
 import LO001 from "../assets/LOGO/LO001.png";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useFirestore } from "../hooks/useFirestore";
 import { useNavigate } from "react-router-dom";
 
-const logo = { MP001, BG001, LO001 };
+const logo = { AR001, LO002, LO001 };
 
 export default function SwitchPage() {
   const { user, compList, activeCId } = useAuthContext();
