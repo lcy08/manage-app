@@ -9,15 +9,14 @@ const logo = { AR001, LO002, LO001 };
 
 export default function SwitchPage() {
   const { user, compList, activeCId } = useAuthContext();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const { updateDocument } = useFirestore("users")
+  const { updateDocument } = useFirestore("users");
 
   const handleChange = async (company) => {
-    if(company === activeCId){
+    if (company === activeCId) {
       navigate("/sj");
-    }
-    else {
+    } else {
       const { success, error } = await updateDocument(user.uid, {
         activeCId: company,
       });
@@ -30,14 +29,17 @@ export default function SwitchPage() {
         alert(error.message);
       }
     }
-  }
+  };
 
   return (
     <div className="h-[90dvh] justify-center items-center flex flex-col overflow-hidden">
       <div className="text-center text-2xl mb-5">Perusahaan</div>
       <div className="flex flex-col md:flex-row justify-around gap-y-2 gap-x-4 overflow-y-auto">
         {compList?.map((company) => (
-          <div className="justify-center flex flex-col items-center" key={company}>
+          <div
+            className="justify-center flex flex-col items-center"
+            key={company}
+          >
             <div
               className={`${activeCId === company ? "border-blue-200 bg-blue-100" : "border-gray-200"} border p-3 rounded-2xl justify-center flex w-45 h-45`}
             >

@@ -1,8 +1,8 @@
 import styles from "./SJPrint.module.css";
 
-import AR001 from "../assets/LOGO/AR001.png";
-import LO002 from "../assets/LOGO/LO002.png";
-import LO001 from "../assets/LOGO/LO001.png";
+import AR001 from "../../../assets/LOGO/AR001.png";
+import LO002 from "../../../assets/LOGO/LO002.png";
+import LO001 from "../../../assets/LOGO/LO001.png";
 
 const logo = { AR001, LO002, LO001 };
 
